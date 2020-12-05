@@ -10,10 +10,10 @@ import {ReactComponent as C_LANG} from './components/icons/c.svg';
 import {ReactComponent as NODEJS} from './components/icons/nodejs.svg';
 import {ReactComponent as EXPRESS} from './components/icons/express.svg';
 import {ReactComponent as MONGODB} from './components/icons/mongodb.svg';
-import {ReactComponent as GIT} from './components/icons/git.svg';
 import {ReactComponent as JQUERY} from './components/icons/jquery.svg';
 import {ReactComponent as BOOTSTRAP} from './components/icons/bootstrap.svg';
 import {ReactComponent as REACT} from './components/icons/react.svg';
+import {ReactComponent as GIT} from './components/icons/git.svg';
 
 function App() {
   return (
@@ -42,10 +42,10 @@ function App() {
                         <NODEJS width={iconSize} height={iconSize} title="Node.js" />
                         <EXPRESS style={{fill:"#fff"}} width={iconSize} height={iconSize} title="Express.js" />
                         <MONGODB width={iconSize} height={iconSize} title="MongoDB" />
-                        <GIT width={iconSize} height={iconSize} title="Git" />
                         <JQUERY width={iconSize} height={iconSize} title="jQuery" />
                         <BOOTSTRAP width={iconSize} height={iconSize} title="Bootstrap" />
                         <REACT width={iconSize} height={iconSize} title="React" />
+                        <GIT width={iconSize} height={iconSize} title="Git" />
                     </div>
                 </div>
             </div>
