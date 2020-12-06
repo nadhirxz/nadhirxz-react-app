@@ -81,6 +81,7 @@ div.content-wrapper::-webkit-scrollbar-thumb {
     margin: auto;
 }
 .right-column {
+    margin: auto;
     padding: 10px 10px 40px 20px;
 }
 
