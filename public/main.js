@@ -1,23 +1,34 @@
 headerText = document.getElementById('header-text');
-titleText = document.getElementById('title-text');
-contentText = document.getElementById('content-text');
+headText = headerText.innerHTML;
+console.log(headText)
+headerText.innerHTML = "";
 
-headText = "Hi, I'm Nadhir.";
-devText = "I'm a Developer";
-contText = "I make stuf bla bla bla idk i use a lot of things idk how to express myself haha lol sorry. Lorem ipsum that latin thing idk haha filler goes brrrrr";
+hidden = document.getElementsByClassName('App-hidden')[0];
+if (window.location.pathname == '/') {
+    titleText = document.getElementById('title-text');
+    devText = titleText.innerHTML;
+    titleText.innerHTML = "";
 
-printLetterByLetter(headerText, headText, 100).then(() => {
-    setTimeout(() => {
-        headerText.style.transform = 'translateY(-800%)';
+    contentText = document.getElementById('content-text');
+    contText = contentText.innerHTML;
+    contentText.innerHTML = "";
+
+    printLetterByLetter(headerText, headText, 100).then(() => {
         setTimeout(() => {
-            headerText.style.opacity = 0;
-            document.getElementsByClassName('App-hidden')[0].style.opacity = 1;
-            headerText.parentNode.removeChild(headerText);
-            printLetterByLetter(titleText, devText, 100);
-            printLetterByLetter(contentText, contText, 50);
-        }, 400);
-    }, 700)
-});
+            headerText.style.transform = 'translateY(-800%)';
+            setTimeout(() => {
+                headerText.style.opacity = 0;
+                hidden.style.opacity = 1;
+                headerText.parentNode.removeChild(headerText);
+                printLetterByLetter(titleText, devText, 100);
+                printLetterByLetter(contentText, contText, 50);
+            }, 400);
+        }, 700)
+    });
+} else {
+    headerText.parentNode.removeChild(headerText);
+    hidden.style.opacity = 1;
+}
 
 function printLetterByLetter(destination, message, interval) {
     return new Promise((resolve, reject) => {
