@@ -18,15 +18,15 @@ import { ReactComponent as GIT } from './components/icons/git.svg';
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <h1 id="header-text">-</h1>
+            <header className="App-header"> {/* eslint-disable-next-line */}
+                <h1 id="header-text"></h1>
                 <div className="intro-wrapper App-hidden">
                     <div className="nav-wrapper">
                         <div className="dots-wrapper"><Dot color="#FC6058" /><Dot color="#FEC02F" /><Dot color="#2ACA3E" /></div>
                     </div>
-                    <div className="left-column">
-                        <h1 id="title-text">-</h1>
-                        <p id="content-text">-</p>
+                    <div className="left-column"> {/* eslint-disable-next-line */}
+                        <h1 id="title-text"></h1> {/* eslint-disable-next-line */}
+                        <p id="content-text"></p>
                     </div>
                     <div className="right-column">
                         <h4>Languages</h4>
