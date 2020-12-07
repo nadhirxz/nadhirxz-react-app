@@ -53,5 +53,3 @@ export default class Home extends Component {
     }
 }
 const iconSize = "50px";
-const devText = "I'm a Developer";
-const contText = "I make stuf bla bla bla idk i use a lot of things idk how to express myself haha lol sorry. Lorem ipsum that latin thing idk haha filler goes brrrrr";
