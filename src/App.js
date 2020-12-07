@@ -6,6 +6,7 @@ import Dot from './components/Dot';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
 import NotFound404 from './pages/NotFound404';
+import Projects from './pages/Projects';
 
 function App() {
     const location = useLocation();
@@ -21,7 +22,8 @@ function App() {
                         <div className="content-wrapper">
                             <Switch location={location} key={location.pathname}>
                                 <Route path="/" exact render={() => <Home pageVariants={pageVariants} pageTransition={pageTransition} devText={devText} contText={contText} />} />
-                                <Route path="/skills" exact render={() => <Skills pageVariants={pageVariants} pageTransition={pageTransition} />} />
+                                <Route path="/skills" render={() => <Skills pageVariants={pageVariants} pageTransition={pageTransition} />} />
+                                <Route path="/projects" render={() => <Projects pageVariants={pageVariants} pageTransition={pageTransition} />} />
                                 <Route component={NotFound404} />
                             </Switch>
                         </div>

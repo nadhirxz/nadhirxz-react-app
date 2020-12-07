@@ -43,7 +43,9 @@ export default class Home extends Component {
                         <REACT width={iconSize} height={iconSize} title="React" />
                         <GIT width={iconSize} height={iconSize} title="Git" />
 
-                        <Link to="/skills"><button className="btn">Skills</button></Link>
+                        <Link to="/skills"><button className="btn" style={{width:'40%'}}>Skills</button></Link>
+                        <br/>
+                        <Link to="/projects"><button className="btn" style={{width:'40%'}}>Projects</button></Link>
                     </div>
                 </div>
             </motion.div>
