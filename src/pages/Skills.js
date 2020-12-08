@@ -18,7 +18,7 @@ export default class Skills extends Component {
                         <ProgressBar name='Git/GitHub' limit={60} />
                     </div>
                     <div className="right-column">
-                        <ProgressBar name='JS Backend' eg='Node/Express' limit={80} />
+                        <ProgressBar name='JS Back-end' eg='Node/Express' limit={80} />
                         <ProgressBar name='Databases' eg='SQL/Mongo' limit={55} />
                         <ProgressBar name='Python' limit={60} />
                         <ProgressBar name='OOP' eg='Java' limit={50} />
