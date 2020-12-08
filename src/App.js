@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
@@ -7,15 +7,44 @@ import Home from './pages/Home';
 import Skills from './pages/Skills';
 import NotFound404 from './pages/NotFound404';
 import Projects from './pages/Projects';
+import { printLetterByLetter } from './functions.js';
 
 function App() {
     const location = useLocation();
+    useEffect(() => { // when the page loads
+        const introWrapper = document.getElementsByClassName('intro-wrapper')[0];
+
+        const headerText = document.getElementById('header-text');
+        const headText = headerText.innerHTML;
+        headerText.innerHTML = "";
+
+        printLetterByLetter(headerText, headText, 100).then(() => {
+            setTimeout(() => {
+                headerText.style.transform = 'translateY(-800%)';
+                setTimeout(() => {
+                    headerText.style.opacity = 0;
+                    introWrapper.style.opacity = 1;
+
+                    headerText.parentNode.removeChild(headerText);
+
+                    const titleText = document.getElementById('title-text');
+                    titleText.innerHTML = "";
+
+                    const contentText = document.getElementById('content-text');
+                    contentText.innerHTML = "";
+
+                    printLetterByLetter(document.getElementById('title-text'), devText, 100);
+                    printLetterByLetter(document.getElementById('content-text'), contText, 50);
+                }, 400);
+            }, 700);
+        });
+    }, [])
     return (
         <div className="App">
             <header className="App-header"> {/* eslint-disable-next-line */}
                 <h1 id="header-text">{headText}</h1>
                 <AnimatePresence>
-                    <div className="intro-wrapper App-hidden">
+                    <div className="intro-wrapper hidden">
                         <div className="nav-wrapper">
                             <div className="dots-wrapper"><Dot color="#FC6058" /><Dot color="#FEC02F" /><Dot color="#2ACA3E" /></div>
                         </div>

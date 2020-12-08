@@ -9,8 +9,8 @@ export default class ProgressBar extends Component {
             <div className="progress-block">
                 <div className="progress-text-container">
                     <div className='progress-text'>
-                        <span className='large'>{this.props.name}</span>
-                        {(this.props.eg) ? <span className='small'>({this.props.eg})</span> : ''}
+                        <span className='large print-chars'>{this.props.name}</span>
+                        {(this.props.eg) ? <span className='small print-chars'>({this.props.eg})</span> : ''}
                     </div>
                 </div>
                 <div className="progress">

@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ProgressBar from '../components/ProgressBar';
+import { printingChars } from '../functions.js'
 
 export default class Skills extends Component {
+    componentDidMount() {
+        printingChars()
+    }
     render() {
         const skills = [
             { name: 'JavaScript', l: 90 },

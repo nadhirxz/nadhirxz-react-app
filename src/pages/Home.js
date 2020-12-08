@@ -15,13 +15,14 @@ import { ReactComponent as BOOTSTRAP } from '../components/icons/bootstrap.svg';
 import { ReactComponent as REACT } from '../components/icons/react.svg';
 import { ReactComponent as GIT } from '../components/icons/git.svg';
 import { motion } from 'framer-motion';
+import { printLetterByLetter } from '../functions.js';
 
 export default class Home extends Component {
     render() {
         return (
             <motion.div initial="initial" animate="in" exit="out" variants={this.props.pageVariants} transition={this.props.pageTransition}>
                 <div className="main-content">
-                    <div className="left-column" style={{margin:'auto'}}> {/* eslint-disable-next-line */}
+                    <div className="left-column" style={{ margin: 'auto' }}> {/* eslint-disable-next-line */}
                         <h1 id="title-text">{this.props.devText}</h1> {/* eslint-disable-next-line */}
                         <p id="content-text">{this.props.contText}</p>
                     </div>
@@ -43,9 +44,9 @@ export default class Home extends Component {
                         <REACT width={iconSize} height={iconSize} title="React" />
                         <GIT width={iconSize} height={iconSize} title="Git" />
 
-                        <Link to="/skills"><button className="btn" style={{width:'40%'}}>Skills</button></Link>
-                        <br/>
-                        <Link to="/projects"><button className="btn" style={{width:'40%'}}>Projects</button></Link>
+                        <Link to="/skills"><button className="btn" style={{ width: '40%' }}>Skills</button></Link>
+                        <br />
+                        <Link to="/projects"><button className="btn" style={{ width: '40%' }}>Projects</button></Link>
                     </div>
                 </div>
             </motion.div>

@@ -12,7 +12,7 @@
     color: white;
 }
 
-.App-hidden {
+.hidden {
     opacity:0;
     -webkit-transition: opacity 2s;
     -moz-transition: opacity 2s;
@@ -131,6 +131,7 @@ svg {
     display: flex;
     align-items: center;
     margin: auto;
+    min-height: 5vh;
 }
 .progress-text-container {
     min-width: 25%;
