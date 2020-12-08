@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
     height: 100vh;
     display: flex;
@@ -74,22 +68,20 @@ div.content-wrapper::-webkit-scrollbar-thumb {
 .main-content {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "left-column right-column"
     ;
 }
 .left-column {
+    width: 90%;
     grid-area: left-column;
-    padding: 10px 20px 40px 50px;
-    width: 1fr;
-    min-width: 1fr;
-    margin: auto;
+    padding: 20px;
 }
 .right-column {
+    width: 90%;
     grid-area: right-column;
-    padding: 10px 10px 40px 20px;
-    margin: auto;
+    padding: 20px;
 }
 
 .dots-wrapper {
@@ -134,6 +126,72 @@ svg {
     background-color: #364f6d;
 }
 
+.progress-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.progress-text-container {
+    min-width: 25%;
+    max-width: 25%;
+    margin: 5px 10px 5px 0;
+    display: grid;
+}
+.progress-text {
+    margin-left: auto;
+    display: grid;
+}
+.progress-text .large {
+    font-size: .8em;
+}
+.progress-text .small {
+    font-size: .5em;
+}
+.progress {
+    height: 10px;
+    width: 90%;
+	position: relative;
+	background: #444;
+	border-radius: 25px;
+    padding: 3px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.progress > span {
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    animation: animate 3s ease;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+        box-shadow: 0 0 20px red;
+        background-color: #fff;
+    }
+    35% {
+        box-shadow: 0 0 20px red;
+        background-color: #fff;
+    }
+    50% {
+        box-shadow: 0 0 20px red;
+        background-color: #fff;
+    }
+    75% {
+        box-shadow: 0 0 20px red;
+        background-color: #fff;
+    }
+    85% {
+        box-shadow: 0 0 20px green;
+    }
+    100% {
+        box-shadow: 0 0 30px green;
+    }
+}
+
 @media screen and (max-width: 950px){
     .main-content {
         grid-template-columns: 1fr;
@@ -141,5 +199,38 @@ svg {
             'left-column'
             'right-column'
         ;
+    }
+    .left-column  {
+        padding: 0px;
+    }
+    .right-column {
+        padding: 0px;
+    }
+    .progress {
+        margin: 10px 0;
+        width: 90%;
+        margin: auto;
+    }
+    .progress-block {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 5px;
+    }
+    .progress-text-container {
+        min-width: 100%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        font-size: .8em;
+    }
+    .progress-text {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        display: block;
+        font-size: 1.5rem;
+    }
+    .progress-text .large::after {
+        content: ' ';
     }
 }

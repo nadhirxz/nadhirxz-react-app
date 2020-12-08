@@ -21,7 +21,7 @@ export default class Home extends Component {
         return (
             <motion.div initial="initial" animate="in" exit="out" variants={this.props.pageVariants} transition={this.props.pageTransition}>
                 <div className="main-content">
-                    <div className="left-column"> {/* eslint-disable-next-line */}
+                    <div className="left-column" style={{margin:'auto'}}> {/* eslint-disable-next-line */}
                         <h1 id="title-text">{this.props.devText}</h1> {/* eslint-disable-next-line */}
                         <p id="content-text">{this.props.contText}</p>
                     </div>
