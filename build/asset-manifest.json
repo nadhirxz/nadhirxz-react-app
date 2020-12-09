@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/nadhirxz/static/css/main.bd9d7016.chunk.css",
+    "main.js": "/nadhirxz/static/js/main.e73fc9d3.chunk.js",
+    "main.js.map": "/nadhirxz/static/js/main.e73fc9d3.chunk.js.map",
+    "runtime-main.js": "/nadhirxz/static/js/runtime-main.9bffbd43.js",
+    "runtime-main.js.map": "/nadhirxz/static/js/runtime-main.9bffbd43.js.map",
+    "static/js/2.364ef532.chunk.js": "/nadhirxz/static/js/2.364ef532.chunk.js",
+    "static/js/2.364ef532.chunk.js.map": "/nadhirxz/static/js/2.364ef532.chunk.js.map",
+    "index.html": "/nadhirxz/index.html",
+    "static/css/main.bd9d7016.chunk.css.map": "/nadhirxz/static/css/main.bd9d7016.chunk.css.map",
+    "static/js/2.364ef532.chunk.js.LICENSE.txt": "/nadhirxz/static/js/2.364ef532.chunk.js.LICENSE.txt",
+    "static/media/bootstrap.fdc6720b.svg": "/nadhirxz/static/media/bootstrap.fdc6720b.svg",
+    "static/media/c.d6e64290.svg": "/nadhirxz/static/media/c.d6e64290.svg",
+    "static/media/css.ea71c44d.svg": "/nadhirxz/static/media/css.ea71c44d.svg",
+    "static/media/discord.20b28421.svg": "/nadhirxz/static/media/discord.20b28421.svg",
+    "static/media/email.81994c00.svg": "/nadhirxz/static/media/email.81994c00.svg",
+    "static/media/express.428705f4.svg": "/nadhirxz/static/media/express.428705f4.svg",
+    "static/media/git.7d6cc689.svg": "/nadhirxz/static/media/git.7d6cc689.svg",
+    "static/media/github.0391b2c8.svg": "/nadhirxz/static/media/github.0391b2c8.svg",
+    "static/media/html.06f35cc5.svg": "/nadhirxz/static/media/html.06f35cc5.svg",
+    "static/media/java.c1205dda.svg": "/nadhirxz/static/media/java.c1205dda.svg",
+    "static/media/jquery.fbfb65d6.svg": "/nadhirxz/static/media/jquery.fbfb65d6.svg",
+    "static/media/js.b30d37a1.svg": "/nadhirxz/static/media/js.b30d37a1.svg",
+    "static/media/mongodb.05396daf.svg": "/nadhirxz/static/media/mongodb.05396daf.svg",
+    "static/media/mysql.9714ad0c.svg": "/nadhirxz/static/media/mysql.9714ad0c.svg",
+    "static/media/nodejs.1ca2ad9d.svg": "/nadhirxz/static/media/nodejs.1ca2ad9d.svg",
+    "static/media/python.1d7df0e2.svg": "/nadhirxz/static/media/python.1d7df0e2.svg",
+    "static/media/react.dae62280.svg": "/nadhirxz/static/media/react.dae62280.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bffbd43.js",
+    "static/js/2.364ef532.chunk.js",
+    "static/css/main.bd9d7016.chunk.css",
+    "static/js/main.e73fc9d3.chunk.js"
+  ]
+}
