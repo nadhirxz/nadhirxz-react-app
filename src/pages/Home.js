@@ -13,7 +13,7 @@ import { ReactComponent as MONGODB } from '../components/icons/mongodb.svg';
 import { ReactComponent as JQUERY } from '../components/icons/jquery.svg';
 import { ReactComponent as BOOTSTRAP } from '../components/icons/bootstrap.svg';
 import { ReactComponent as REACT } from '../components/icons/react.svg';
-import { ReactComponent as GIT } from '../components/icons/git.svg';
+import { ReactComponent as ELECTRON } from '../components/icons/electron.svg';
 import { ReactComponent as GITHUB } from '../components/icons/github.svg';
 import { ReactComponent as EMAIL } from '../components/icons/email.svg';
 import { ReactComponent as DISCORD } from '../components/icons/discord.svg';
@@ -47,7 +47,7 @@ export default class Home extends Component {
                         <JQUERY style={style} title="jQuery" />
                         <BOOTSTRAP style={style} title="Bootstrap" />
                         <REACT style={style} title="React" />
-                        <GIT style={style} title="Git" />
+                        <ELECTRON style={style} title="Electron" />
 
                         <br />
                         <Link id="skills-link" to="/skills"><button className="btn" style={{ width: '40%' }}>Skills</button></Link>

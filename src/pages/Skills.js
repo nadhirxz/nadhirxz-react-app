@@ -14,16 +14,16 @@ export default class Skills extends Component {
     render() {
         const skills = [
             { name: 'JavaScript', l: 90 },
-            { name: 'HTML/CSS', l: 85 },
+            { name: 'HTML/CSS', l: 80 },
             { name: 'Bootstrap', l: 65 },
-            { name: 'jQuery', l: 40 },
-            { name: 'React', l: 20 },
-            { name: 'Git/GitHub', l: 60 },
+            { name: 'jQuery', l: 50 },
+            { name: 'React', l: 40 },
+            { name: 'Electron', l: 35 },
             { name: 'Web Back-end', l: 80, eg: 'Node/Express' },
-            { name: 'Databases', l: 55, eg: 'SQL/MongoDB' },
-            { name: 'Python', l: 60 },
-            { name: 'OOP', l: 50, eg: 'Java' },
-            { name: 'C', l: 40 }
+            { name: 'Databases', l: 50, eg: 'SQL/MongoDB' },
+            { name: 'Python', l: 55 },
+            { name: 'OOP', l: 45, eg: 'Java' },
+            { name: 'C', l: 35 }
         ]
         return (
             <motion.div initial="initial" animate="in" exit="out" variants={this.props.pageVariants} transition={this.props.pageTransition}>
